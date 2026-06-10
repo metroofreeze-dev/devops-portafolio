@@ -1,0 +1,7 @@
+Día 1 de DevOps en macOS
+Git, zsh y Homebrew
+ERROR: disco lleno
+INFO: proceso OK
+ERROR: timeout conexión
+ERROR: disco lleno
+ERROR: disco lleno
