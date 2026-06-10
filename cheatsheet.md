@@ -75,3 +75,19 @@ pbpaste — pega el contenido del portapapeles en la terminal. Equivale a Cmd+V.
 - git merge (nombre): fusiona una rama con la rama actual
 - git log --oneline: historial compacto de commits
 - git diff: muestra exactamente qué líneas cambiaron
+
+## Git - flujo profesional
+
+- Que es una rama y para que sirve: las ramas son basicamente rutas alternas o realidades paralelas de un mismo programa, su funcion es hacer cambios o probar cosas nuevas sin comprometer el codigo fuente o principal que usan los clientes
+- git diff, cuando usarlo?: debemos usarlos antes de commiterar cualquier codigo, de esta forma estamos anuentes de cualquier cambio que podamos realizar antes de procesarlo, con diff nos muestra con verde lo que estamos agregando y con rojo lo que estamos borrando
+- git stash/ git stash pop: basicamente estos son lineas de codigo que guardamos pero que dejamos en segundo plano, si deseamos que esten nuevamente en el codigo utilizamos el stash pop y reapareceran. 
+- Que es un conflicto y como se resuelve?: los conflictos suceden cuando se intenta mezclar documentos y hay una o varias lineas de codigo que estan en las mismas lineas, debido a que estan en la misma zona tenemos un error de conflicto y no podemos mezclarlas automaticamente, sin embargo desde Visual studio code tenemos las opciones de mezclar ambas o desechar alguna de las dos
+- Porque se borran las ramas despues del merge? Se borran porque las ramas no estan hechas para permanecer en el sistema sino que sirven para ser exclusivamente temporales si despues del trabajo no se utilizaran las mismas se borran, y en lo personal tambien son buenas en caracter de seguridad para la infraestructura general y evitar errores a futuro
+- El flujo completo de trabajo: rama → trabajo → commit → merge → push → borrar rama
+- Rama: creamos la rama con el codigo git checkout -b feature/(nombre-del-archivo)
+- Trabajo: Serian todos los procesos que estan dentro de esta seccion editar los archivos, crear scripts y demas cambios que se busquen hacer
+- Revision: git diff, para tener una representacion grafica de que es lo que realmente cambio
+- Commit: git add -A && git commit -m "tipo:descripcion de lo que se hace" son los pasos para tomar la "fotografia" digital del codigo que estamos haciendo al ser validado y mantenerlo de esta forma
+- Merge: Regresamos al main con git checkout (nombre-del-inicio-o-main) y fusionamos la rama con git merge (nombre-de-la-rama)
+- Push: se suben los cambios a Github para que sea publicamente visibles los cambios
+- Borrar la rama: git branch -d (nombre-de-la-rama) esto borra la rama que ha sido creada
