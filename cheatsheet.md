@@ -68,3 +68,10 @@ pbcopy — copia al portapapeles desde la terminal. Equivale a seleccionar texto
 pbpaste — pega el contenido del portapapeles en la terminal. Equivale a Cmd+V.
 
 **En Linux estos comandos no existen. Cuando trabajes en servidores remotos solo tendrás los comandos universales. Pero en tu Mac del día a día te ahorran tiempo.**
+
+## Git — ramas
+- git branch: muestra todas las ramas, la verde es donde estás parado
+- git checkout -b (nombre): crea una rama nueva y te mueve a ella
+- git merge (nombre): fusiona una rama con la rama actual
+- git log --oneline: historial compacto de commits
+- git diff: muestra exactamente qué líneas cambiaron
