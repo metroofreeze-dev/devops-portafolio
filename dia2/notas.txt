@@ -1,1 +1,2 @@
 complete el dia 2 de Git
+recap día 3
