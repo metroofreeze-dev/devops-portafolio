@@ -4,6 +4,20 @@ from datetime import datetime
 
 API_URL = "https://jsonplaceholder.typicode.com"
 
+def verificar_api():
+    print("Verificando disponibilidad de la API...")
+    try:
+        respuesta = requests.get(API_URL, timeout=5)
+        if respuesta.status_code == 200:
+            print("API disponible ✓")
+            return True
+        else:
+            print(f"API no disponible — código {respuesta.status_code}")
+            return False
+    except requests.exceptions.ConnectionError:
+        print("ERROR: No se puede conectar a la API")
+        return False
+
 def obtener_usuario(id_usuario):
     print(f"=== Consultando API ===")
     print(f"Fecha: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
@@ -27,6 +41,8 @@ def obtener_usuario(id_usuario):
         print("ERROR: No hay conexión a internet")
 
 if __name__ == "__main__":
-    for i in range(1, 6):
-        obtener_usuario(i)
-        print("")
+    if verificar_api():
+        print("---")
+        for i in range(1, 4):
+            obtener_usuario(i)
+            print("")
