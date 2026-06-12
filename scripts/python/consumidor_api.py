@@ -34,6 +34,9 @@ def obtener_usuario(id_usuario):
             print(f"Teléfono  : {usuario['phone']}")
             print(f"Ciudad    : {usuario['address']['city']}")
             print(f"Empresa   : {usuario['company']['name']}")
+            with open("../../logs/resultados_api.txt", "a") as archivo:
+                archivo.write(f"{datetime.now()} - Usuario: {usuario['name']} - Email: {usuario['email']}\n")
+
         else:
             print(f"ERROR: La API respondió con código {respuesta.status_code}")
 

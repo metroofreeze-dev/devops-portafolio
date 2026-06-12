@@ -91,3 +91,12 @@ pbpaste — pega el contenido del portapapeles en la terminal. Equivale a Cmd+V.
 - Merge: Regresamos al main con git checkout (nombre-del-inicio-o-main) y fusionamos la rama con git merge (nombre-de-la-rama)
 - Push: se suben los cambios a Github para que sea publicamente visibles los cambios
 - Borrar la rama: git branch -d (nombre-de-la-rama) esto borra la rama que ha sido creada
+
+## Python para DevOps
+
+- Que es una funcion y para que sirve?: Una funcion puede entenderse como un proceso autonomo que puede ser activado y desactivado a preferencia. asi como tambien activado las veces necesario segun el codigo y su funcionamiento asi como tambien los factores de decision
+- Que hace try/except?: Try inicia el proceso, podemos traducirlo como pruebas, dentro del try pueden haber factores condicionales como if, else. en su contra parte el except es eso unico que no vamos a tratar de realizar, o aquello que maneja todo lo que no este dentro de los factores condicionales antes utilizados en el codigo. Ejemplo de esto lo tenemos cuando en el script Consumidor_api.py inicia la funcion try y except, donde try maneja toda la conexion de la API con nuestro programa. sin embargo en los casos donde no recibamos absolutamente nada de la API utilizamos el except, donde maneja el error y nos informa que ha sucedido
+- Que es request.get() y para que se usa?: Un request es una herramienta que se utiliza para solicitar informacion a una API externa y nos provee la informacion con datos. informando en los parentesis la URL nos trae la informacion solicitada
+- Que es un status code?: Es el estado de nuestra conexion a la URL o API, una coneccion 200 significa que la conexion fue satisfactoria, un connection error significa que no pudimos tener ningun tipo de acceso a la URL, ni siquiera un codigo de error. hubo nulo contacto
+- Que hace open() con modo "a" vs modo "w"?: en el modo "a" sirve para agregar al final sin borrar, muy parecido a lo que hace >> en la terminal, "w" rescribe todo por el texto nuevo que se produce, lo mismo que > en una terminal
+- Para que sirve el health check antes de consultar una API?: En mi opinion es un paso bastante importante y escencial para comprobar que las bases de nuestro proceso funcionen antes de construir. es como probar los cimientos, el healthcheck nos ayuda a saber que una conexion es exitosa o no. De esta forma podemos tener seguridad de lo que se va a ejecutar va a funcionar y no ser propensos a errores mayores.
