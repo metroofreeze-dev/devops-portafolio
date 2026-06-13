@@ -100,3 +100,13 @@ pbpaste — pega el contenido del portapapeles en la terminal. Equivale a Cmd+V.
 - Que es un status code?: Es el estado de nuestra conexion a la URL o API, una coneccion 200 significa que la conexion fue satisfactoria, un connection error significa que no pudimos tener ningun tipo de acceso a la URL, ni siquiera un codigo de error. hubo nulo contacto
 - Que hace open() con modo "a" vs modo "w"?: en el modo "a" sirve para agregar al final sin borrar, muy parecido a lo que hace >> en la terminal, "w" rescribe todo por el texto nuevo que se produce, lo mismo que > en una terminal
 - Para que sirve el health check antes de consultar una API?: En mi opinion es un paso bastante importante y escencial para comprobar que las bases de nuestro proceso funcionen antes de construir. es como probar los cimientos, el healthcheck nos ayuda a saber que una conexion es exitosa o no. De esta forma podemos tener seguridad de lo que se va a ejecutar va a funcionar y no ser propensos a errores mayores.
+
+## Bash Scripting
+
+- Que es el shebang, y porque va primero? El Shebang en mi opinion es el icono indicativo, la senal de que un programa se maneja en la terminal, tambien una medida de seguridad para evitar confusiones y la breve explicacion por debajo del comando que indica para que es el programa antes de ejecucion
+- Que hace $(): lo entiendo como las adiciones automaticas del sistema, que no tengo que proveer manualmente, como la fecha del dia, la hora y demas
+- Diferencia entre local y una variable normal: La version local informa que la variable solo se ejecuta en esa seccion y no en ninguna otra del codigo, diferencia de las que no tienen.
+- Que es case y cuando usarlo vs if/elif: case: se utiliza para valores fijos, como por ejemplo una tabla de eleccion. if/elif: cuando son condiciones mas complejas como multiples variables
+- while true y como se sale del loop: while true en si es una repeticion continua hasta que se salga del punto incial despues de que termine un programa, para salir se utiliza la tecla indicada, en la mayoria de los casos en bash es 0
+- que significa exit 0: es basicamente la salida, el 0 es el indicador universal de finalizacion de programa. 
+- Para que sirve: Chmod +x: funciona para dar permisos de ejecucion, es asi en este caso ya que la x en permisos es de ejecutrar, es como decir, te doy permiso (chmod) de ejecutar (+x)
