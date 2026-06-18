@@ -110,3 +110,9 @@ pbpaste — pega el contenido del portapapeles en la terminal. Equivale a Cmd+V.
 - while true y como se sale del loop: while true en si es una repeticion continua hasta que se salga del punto incial despues de que termine un programa, para salir se utiliza la tecla indicada, en la mayoria de los casos en bash es 0
 - que significa exit 0: es basicamente la salida, el 0 es el indicador universal de finalizacion de programa. 
 - Para que sirve: Chmod +x: funciona para dar permisos de ejecucion, es asi en este caso ya que la x en permisos es de ejecutrar, es como decir, te doy permiso (chmod) de ejecutar (+x)
+
+## Proyecto integrador - Semana1
+
+- Que combina el proyecto? El proyecto combina todas las funciones relacionadas en python, el flujo de conectividad, menu interactivo, y generador de reporte HTML donde ayuda a aprender un poco mas e incursionar en diferentes formas de trabajo. 
+- Que fue lo mas dificil de construirlo solo?: Mas que nada lo complicado es el recordad los terminos de programacion, tomo mas del tiempo esperado el recordar y documentar todo lo que necesitaba, aunque esto es algo normal. en mi opinion la programacion es mas de "Saber donde encontrar" que "Esforzarnos en recordar"
+- Que aprendi sobre como python genera HTML desde un script?: Fue algo bastante inesperado, sin embargo es conocido que python es uno de los lenguajes de programacion mas versatiles y potentes, lo que lo hace una excelente herramienta de desarrollo actual y futuro.
